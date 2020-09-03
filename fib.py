@@ -8,8 +8,11 @@ def fib_iter():
         a = i
 
 def main():
+    num_fib = input('How many fibonacci numbers would you like to see? ')
+    num_fib = int(num_fib)
+
     fib = fib_iter()
-    for i in range(15):
+    for i in range(num_fib):
         print(next(fib))
 
 if __name__ == "__main__":
