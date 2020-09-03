@@ -21,7 +21,7 @@ def main():
             print("{} is not a valid integer! Try again!".format(num_fib))
 
     fib = fib_iter()
-    for i in range(num_fib):
+    for _ in range(num_fib):
         print(next(fib))
 
 if __name__ == "__main__":
