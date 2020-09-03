@@ -1,4 +1,5 @@
 def fib_iter():
+    "Iterate over the fibonacci numbers."
     a = 0
     b = 1
     while True:
