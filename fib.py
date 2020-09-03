@@ -12,10 +12,12 @@ def main():
         num_fib = input('How many fibonacci numbers would you like to see? ')
         try:
             num_fib = int(num_fib)
+            if num_fib <= 0:
+                print("You need to choose at least one!")
+                continue
             break
         except ValueError:
             print("{} is not a valid integer! Try again!".format(num_fib))
-
 
     fib = fib_iter()
     for i in range(num_fib):
