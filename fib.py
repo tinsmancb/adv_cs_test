@@ -8,8 +8,14 @@ def fib_iter():
         a = i
 
 def main():
-    num_fib = input('How many fibonacci numbers would you like to see? ')
-    num_fib = int(num_fib)
+    while True:
+        num_fib = input('How many fibonacci numbers would you like to see? ')
+        try:
+            num_fib = int(num_fib)
+            break
+        except ValueError:
+            print("{} is not a valid integer! Try again!".format(num_fib))
+
 
     fib = fib_iter()
     for i in range(num_fib):
