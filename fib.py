@@ -10,7 +10,7 @@ def fib_iter():
 
 def main():
     while True:
-        num_fib = input('How many fibonacci numbers should I print? ')
+        num_fib = input('How many fibonacci numbers would you like to see? ')
         try:
             num_fib = int(num_fib)
             if num_fib <= 0:
